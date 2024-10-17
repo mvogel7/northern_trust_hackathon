@@ -3,6 +3,9 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import Link from "next/link"
 import {
+  Calculator,
+  Calendar,
+  CreditCard,
   File,
   Home,
   LineChart,
@@ -15,8 +18,20 @@ import {
   Search,
   Settings,
   ShoppingCart,
+  Smile,
+  User,
   Users2,
 } from "lucide-react"
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+  CommandShortcut,
+} from "@/components/ui/command"
 
 import { Badge } from "@/components/ui/badge"
 import {
@@ -343,10 +358,10 @@ const Dashboard: React.FC = () => {
                         <TableHead className="hidden w-[100px] sm:table-cell">
                           <span className="sr-only">Image</span>
                         </TableHead>
-                        <TableHead>Name</TableHead>
-                        <TableHead>Status</TableHead>
+                        <TableHead>To</TableHead>
+                        <TableHead>From</TableHead>
                         <TableHead className="hidden md:table-cell">
-                          Price
+                          Exchange Rate
                         </TableHead>
                         <TableHead className="hidden md:table-cell">
                           Total Sales
